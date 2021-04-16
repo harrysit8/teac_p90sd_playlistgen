@@ -42,5 +42,8 @@ rm -f *.ppl
 gen $path
 
 shopt -s dotglob
-mv *.ppl PLAYLISTS/
+if [ ! -d PLAYLISTS ] ;then
+    mkdir PLAYLISTS
+fi
+mv *.ppl PLAYLISTS/    
 shopt -u dotglob
