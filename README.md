@@ -1,5 +1,5 @@
 # Teac playlist generator
-a bash script that generate playlist for **HA-P90SD** based on directory structure
+a bash script that generate playlist for **HA-P90SD** base on directory structure
 
 ### Caution
 Please **backup your original .ppl** inside /PLAYLISTS first, as the script may overide the original .ppl in your PLAYLISTS folder!!!
