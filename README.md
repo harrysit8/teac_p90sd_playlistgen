@@ -13,4 +13,5 @@ bash genplaylist.sh
 ### Limitation
 This script won't work with Hangul（Korea characters) on MacOS, as the characters generated in the .ppl is not regonized with P90-SD.
 Hangul is diassembled to Korea alphabetic on MacOS, but most of the application/browser(such as chrome, vscode, but not notepad++) assemble it automatically.
+//It should be the problem caused by Itunes/Apple Music when exacting CD audio named with Hangul.
 
