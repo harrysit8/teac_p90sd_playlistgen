@@ -24,8 +24,9 @@ gen() {
     #echo "$inputDir & $currentDir"
     for i in "$inputDir"/*; do
         local item=$i
-        if [ "$item" = "PLAYLISTS" ] || [ "$item" = "genplaylist.sh" ]; 
-            then continue
+        local item_basename=$(basename "$item")
+        if [ "$item_basename" = "PLAYLISTS" ]  || [ "$item_basename" = "genplaylist.sh" ]; then
+            continue         
         else 
             if [ -d "$item" ]; then
                 print "Directory " +; Cprint "[$item]" lightblue +; print " found, parsing..."
