@@ -1,4 +1,7 @@
 #!/usr/local/bin/bash
+version="23.7.21"
+author="harrysit8"
+license="MIT"
 
 white="\033[0m"
 grey="\033[90m"
@@ -58,6 +61,7 @@ gen() {
         fi
     done
 }
+print "$(basename $BASH_SOURCE) - $version, @$author"
 
 path=$(pwd)
 rand=$(date +%s)
@@ -67,6 +71,10 @@ gen $path
 
 shopt -s dotglob
 if [ ! -d PLAYLISTS ]; then
+    mkdir PLAYLISTS
+else
+    rm -rf PLAYLISTS.backup
+    mv PLAYLISTS PLAYLISTS.backup
     mkdir PLAYLISTS
 fi
 mv *.ppl PLAYLISTS/
