@@ -2,7 +2,7 @@
 a bash script that generate playlist for **HA-P90SD** base on directory structure
 
 ### Caution
-Please **backup your original .ppl** inside /PLAYLISTS first, as the script may overide the original .ppl in your PLAYLISTS folder!!!
+Please **backup your existing .ppl** inside /PLAYLISTS first, as the script will overide the existing .ppl in your PLAYLISTS folder if the name of the playlist is same as one of you folder!!!
 
 ### QuickStart
 put it under your root directory of SD card and
